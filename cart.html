@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Module</title>
+</head>
+
+<body>
+    <button onclick=" addItem() ">Add Item</button>
+    <button onclick=" removeItem() ">Remove Item</button>
+    <button onclick=" clearCart() " >Clear Cart</button>
+
+
+
+<script type="text/javascript">
+    let cartList = 0;
+    function addItem(){
+        cartList ++;
+        console.log(`cartList + ${cartList}`)
+    }
+    function removeItem(){
+        if (cartList > 0) {
+            cartList --;
+            console.log(`cartList + ${cartList}`)
+        } else {
+            alert (' Cart is Empty')
+        }
+    }
+    function clearCart(){
+        if (cartList > 0) {
+
+            cartList = 0;
+            console.log(`cartList + ${cartList}`)
+            alert('You\'ve emptied Cart')
+        } else{
+            alert(" Cart is emptied")
+        }
+    }
+</script>
+
+
+</body>
+
+</html>

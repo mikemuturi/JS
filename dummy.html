@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Cart Section</title>
+</head>
+
+<body>
+<!-- cart quantity feature -->
+<button onclick="
+    console.log(` Cart List: ${cartList}`);
+">
+  Show List  
+</button>
+<button onclick=" 
+cartList = cartList + 1;
+console.log(` Cart List: ${cartList}`);
+"
+
+> Add to Cart </button>
+
+<button onclick="
+cartList = cartList + 2;
+console.log(` Cart List: ${cartList}`);
+">+2</button>
+<button onclick="
+cartList = cartList + 3;
+console.log(` Cart List: ${cartList}`);
+">+3</button>
+<button onclick="
+cartList ++;
+console.log(` Cart List: ${cartList}`);
+"> + </button>
+<button onclick="
+cartList -- ;
+console.log
+"></button>
+<button onclick="
+cartList = 0;
+console.log('Cart list emptied');
+console.log(` Cart List: ${cartList}`);
+">
+  Empty Cart  
+</button>
+<script>
+let cartList = 0;
+
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart JavaScript Function</title>
+</head>
+
+<body>
+    <button>AddItem</button>
+    <button>+1></button>
+    <button>+1></button>
+    <button>EmptyCart></button>
+
+    <script>
+        let cartList = 0;
+
+        function addItem() {
+            cartList = cartList + 1;
+            console.log(`cartList = ${cartList}`);
+        }
+
+        function incre() {
+            cartList++;
+            console.log(`cartList = ${cartList}`);
+
+        }
+
+        function decre() {
+            if (cartList > 0) {
+                cartList--;
+                console.log('cartList = ${cartList}');
+            } else {
+                console.log('cart is empty');
+            }
+        }
+
+        function emptyCart() {
+            if (cartList === 0) {
+                alert('Cart is Empty');
+            } else {
+                cartList = 0;
+                console.log('Cart is empty');
+            }
+            console.log('cartList = ${cartList}');
+        }
+    </script>
+
+</body>
+
+</html>
