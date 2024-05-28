@@ -1,12 +1,11 @@
 body {
     font-family: Arial;
-
 }
 
 .todo-grid, 
 .todo-input-grid {
     display: grid;
-    grid-template-columns: 200px 150px 100px;
+    grid-template-columns: 200px 150px 200px; 
     column-gap: 10px;
     row-gap: 10px;
     align-items: center;
@@ -14,12 +13,10 @@ body {
 .todo-input-grid{
     margin-bottom: 10px;
     align-items: stretch;
-
 }
 
 .name-input,
-.due-date-input
-{
+.due-date-input {
     font-size: 15px;
     padding: 6px;
 }
@@ -30,7 +27,8 @@ body {
     font-size: 15px;
     cursor: pointer;
 }
-.delete-todo-button{
+.delete-todo-button,
+.edit {
     background-color: red;
     color: white;
     border: none;
@@ -38,4 +36,11 @@ body {
     cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 80px; /* Fixed width for both buttons */
+    text-align: center; /* Center the text inside the button */
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
 }
